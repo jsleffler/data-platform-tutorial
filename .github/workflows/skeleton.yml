@@ -1,7 +1,7 @@
 # This is a skeleton workflow to get the idea of workflows and actions
 
 name: Skeleton Workflow
-run-name: A workflow to get the idea of workflows and actions, triggered by ${{ github.event_name }} event and/or ${{ github.actor }}.
+run-name: A workflow to get the idea of workflows and actions, triggered by ${{ github.event_name }} event by ${{ github.actor }}.
 
 # Set the triggers
 on:

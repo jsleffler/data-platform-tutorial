@@ -54,6 +54,8 @@ When we commit the `yaml` file and push to GitHub, we can start to see the workf
 
 Now its working, lets test it. Our only real thing to test is that it only runs on commits to `main`. Since a PR merge is a commit, this is not really applicable. So just make a new branch and commit a few things and see if the workflow runs in the GitHub Actions tab.
 
+Now merge your branch into `main` via a PR and see if the workflow runs.
+
 ```yaml
 # This is a skeleton workflow to get the idea of workflows and actions
 

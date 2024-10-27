@@ -1,5 +1,6 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Publish Docs
+run-name: Publish Docs from ${{ github.commit_message }} by ${{ github.actor }}.
 
 on:
   # Runs on pushes targeting the default branch

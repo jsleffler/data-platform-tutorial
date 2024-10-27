@@ -28,7 +28,7 @@ This approach is great for getting started, if working with existing code, be ca
 
 Also, this is kinda like a walking skeleton, an approach to build the foundations of a system before adding in all the complexity. Specifically, we are looking to get a finite simple concept into production. We will do this very simply and as we add complexity (e.g. a staging environment) we can build upon the solid foundations we make here.
 
-### First Workflow, off Main
+## First Workflow, off Main
 
 So we want to create a workflow that will run when a commit is made to `main`. We will create a new file in the `.github/workflows` directory. This is where GitHub Actions will look for workflows to run. We will create a simple workflow that will run when a commit is made to `main`. Have a look here for the start of the documentation: [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
@@ -92,9 +92,24 @@ jobs:
 
 ```
 
-### Deploy our Docs
+## Deploy our Docs
 
-We will create a workflow that will deploy our docs to GitHub Pages. This will allow us to see the changes we make to the docs in real time. This is a good way to see how GitHub Actions works and how we can use it to deploy our code.
+Now we want to do something a bit more realistic and add to our filters. So we will create a workflow, and associated actions, to publish our documentation `./docs` to GitHub Pages. This is very useful and helps render our docs in a nice way for others to see what we are all about. The workflow will only run on push to `main` and if there are any changes within the `./docs` directory.
+
+To do this, we will use a template workflow from GitHub Actions. Go to Actions and "Add workflow", from there browse about, find the docs and select which one is most interesting to you. I used the Jekyll for GitHub Pages one, and the workflow is nicely commented so we can learn a little bit.
+
+## Next Ideas
+
+Not right now, but as we move forward we will be adding some more workflows and actions. Below are some ideas, not to overwhelm you, but to give you an idea of what is possible and the depth of work that can go into this area. All done in an effort to make your life easier and get your code into production fast and safely.
+
+* Have actions block/stop workflows
+* Creating our own actions and connecting to workflows (e.g. in different files)
+* Using secrets and environment variables
+* Using caching and artifacts
+* Creating our own base images and using those to improve performance (e.g. everything already installed)
+* Working with a staging environment and deploying to that
+* Creating more workflows for specific areas (Terraform, DBT, Airflow, etc)
+* Automatic rollbacks from deployments
 
 ## References
 

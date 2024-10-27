@@ -28,5 +28,5 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
-        - name: Run a script
+      - name: Run a script
         run: echo "Hello from job 3"

@@ -15,7 +15,7 @@ jobs:
     needs: [job2]
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Run a script
         run: echo "Hello from job 1"
   job2:

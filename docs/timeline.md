@@ -6,7 +6,7 @@ This is a checkbox list, so feel free to copy this file into you new repo (see G
 
 ## Getting Started - Setup, Terraform & GitHub Actions
 
-- [ ] Start by reading through the [intro](./intro.md) and installing the tools
+- [ ] Start by reading through the [intro](./README.md) and installing the tools
 - [ ] Create your repository in GitHub and clone to your local machine
 - [ ] Create the initial structure and commit your first files (e.g. README.md)
 - [ ] Setup your GCP account and create a new project

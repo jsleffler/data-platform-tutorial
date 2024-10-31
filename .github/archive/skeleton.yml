@@ -1,32 +1,32 @@
-# # This is a skeleton workflow to get the idea of workflows and actions
+# This is a skeleton workflow to get the idea of workflows and actions
 
-# name: Skeleton Workflow
-# run-name: Skeleton workflow, triggered by ${{ github.event_name }} event by ${{ github.actor }}.
+name: Skeleton Workflow
+run-name: Skeleton workflow, triggered by ${{ github.event_name }} event by ${{ github.actor }}.
 
-# # Set the triggers
-# on:
-#   push:
-#     branches:
-#       - main
+# Set the triggers
+on:
+  push:
+    branches:
+      - main
 
-# jobs:
-#   job1:
-#     runs-on: ubuntu-latest
-#     needs: [job2]
-#     steps:
-#       - name: Checkout the code
-#         uses: actions/checkout@v4
-#       - name: Run a script
-#         run: echo "Hello from job 1"
-#   job2:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Run a script
-#         run: echo "Hello from job 2"
-#       - name: Wait for 5 seconds
-#         run: sleep 5
-#   job3:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Run a script
-#         run: echo "Hello from job 3"
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    needs: [job2]
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+      - name: Run a script
+        run: echo "Hello from job 1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a script
+        run: echo "Hello from job 2"
+      - name: Wait for 5 seconds
+        run: sleep 5
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a script
+        run: echo "Hello from job 3"

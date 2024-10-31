@@ -1,6 +1,6 @@
 site_name: Data Platform Tutorial
 theme:
   name: readthedocs
-repo_url: https://github.com/jsleffler/data-platform-tutorial
+repo_url: https://jsleffler.github.io/data-platform-tutorial/
 edit_uri: edit/main/docs/
 copyright: (c) James Leffler

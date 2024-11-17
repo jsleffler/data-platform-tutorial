@@ -4,4 +4,5 @@ theme:
 repo_url: https://github.com/jsleffler/data-platform-tutorial
 site_url: https://jsleffler.github.io/data-platform-tutorial
 edit_uri: edit/main/docs/
+docs_dir: docs
 copyright: (c) James Leffler

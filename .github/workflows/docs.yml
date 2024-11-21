@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build & Deploy
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,7 +33,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies
-        run: pip install mkdocs
+        run: pipenv install --dev
 
       - name: Build
         run: mkdocs build
@@ -42,9 +42,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+          name: site
 
   # Deployment job
   deploy:
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -54,3 +56,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: site

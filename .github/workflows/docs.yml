@@ -33,7 +33,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies
-        run: pip mkdocs
+        run: pip install mkdocs
 
       - name: Build
         run: mkdocs build

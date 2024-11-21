@@ -33,7 +33,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies
-        run: pipenv install --dev
+        run: pip mkdocs
 
       - name: Build
         run: mkdocs build

@@ -6,14 +6,20 @@ This is a checkbox list, so feel free to copy this file into you new repo (see G
 
 ## Getting Started - Setup, Terraform & GitHub Actions
 
+### Setup
+
 - [ ] Start by reading through the [intro](./README.md) and installing the tools
 - [ ] Create your repository in GitHub and clone to your local machine
 - [ ] Create the initial structure and commit your first files (e.g. README.md)
 - [ ] Setup your GCP account and create a new project
 
+### Terraform
+
 - [ ] Start by reading around the subject of Infrastructure as Code (IaC) and Terraform
 - [ ] Dive into the [Terraform Getting Started Guide](./getting-started/terraform.md)
 - [ ] Ensure you have destroyed the resources you created in GCP
+
+### GitHub Actions
 
 - [ ] Start by reading around the subject of CI/CD
 - [ ] *Optional:* read about some of the traditional tools of Jenkins, CircleCI and GitHub Actions

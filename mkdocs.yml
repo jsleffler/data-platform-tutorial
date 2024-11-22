@@ -15,3 +15,10 @@ theme:
 repo_url: https://github.com/jsleffler/data-platform-tutorial
 edit_uri: edit/main/docs/
 copyright: (c) James Leffler
+
+markdown_extensions: 
+  - abbr
+  - def_list
+  - sane_lists
+  - smarty
+  - tables

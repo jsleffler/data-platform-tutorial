@@ -96,7 +96,7 @@ jobs:
 
 Now we want to do something a bit more realistic and add to our filters. So we will create a workflow, and associated actions, to publish our documentation `./docs` to GitHub Pages. This is very useful and helps render our docs in a nice way for others to see what we are all about. The workflow will only run on push to `main` and if there are any changes within the `./docs` directory.
 
-To do this, we will use a template workflow from GitHub Actions. Go to Actions and "Add workflow", from there browse about, find the docs and select which one is most interesting to you. I used `mkdocs` for my setup as I like this tools, the themes (readthedocs) and the configuration. I did some custom setup, but you can just use the template and get going. I did it custom as I started to get errors, the problem was with my Github config for pages, not the pipeline.
+To do this, we will use a template workflow from GitHub Actions. Go to Actions and "Add workflow", from there browse about, find the docs and select which one is most interesting to you. I used `mkdocs` for my setup as I like this tools, the themes (`readthedocs`) and the configuration. I did some custom setup, but you can just use the template and get going. I did it custom as I started to get errors, the problem was with my Github config for pages, not the pipeline.
 
 ## Next Ideas
 
@@ -113,7 +113,7 @@ Not right now, but as we move forward we will be adding some more workflows and 
 
 ## Talking Points
 
-* Explore some of the configurations for the out of the box (OOTB) actions, what can you do with them?
+* Explore some of the configurations for the OOTB actions, what can you do with them?
 * What are the best practices for GitHub Actions in your organisation or group?
 * How to design a workflow that is fast and efficient?
 * What can you cache and what should you not cache?
@@ -124,3 +124,10 @@ Not right now, but as we move forward we will be adding some more workflows and 
 * [GitHub Workflows Quick Start](https://docs.github.com/en/actions/quickstart)
 * [GitHub Environment Variables Defaults](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables)
 * [GitHub Context Variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs)
+
+<!-- Abbr -->
+
+*[CI]: Continuous Integration
+*[CD]: Continuous Deployment
+*[OOTB]: Out of the Box
+*[DBT]: Data Build Tool

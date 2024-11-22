@@ -1,6 +1,6 @@
 # Terraform
 
-## Terraform Setup
+## Setup
 
 We will start with Terraform with the basic objective on push to main (or merge) it will deploy and create our infrastructure. We will use GitHub Actions to do this, we will also aim to make an empty dataset within GCP BigQuery.
 
@@ -8,7 +8,7 @@ Follow the Terraform setup for [your OS](https://developer.hashicorp.com/terrafo
 
 Ask you local AI copilot to help setup your boilerplate Terraform files, or follow the online tutorials. I wont dive into this as it is well documented and you can find it for yourself and dig deep into the areas you need to.
 
-## Terraform BigQuery Dataset
+## BigQuery Dataset
 
 To help here is a some boilerplate code for a dataset in BigQuery (API doc for [google_bigquery_dataset](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/bigquery_dataset)):
 
@@ -30,7 +30,7 @@ resource "google_bigquery_dataset" "dataset" {
 
 In future steps we will setup and change access, labels and more. But for now, lets get this working.
 
-## Terraform CLI Deploy
+## CLI Deploy
 
 As mentioned before, this is contrary to our main objective; we will use the CLI to deploy the dataset to BigQuery. This is because we need to setup the service account and permissions, and this is best learnt and done via the CLI.
 
@@ -52,3 +52,11 @@ If that has run well for you, then lets apply it and see what happens...
 Again, if all this works for you, try `terraform destroy` and see if it removes the dataset.
 
 Great, will all this sorted, lets commit our code so far and get our repo into a state where we can start using GitHub Actions. Don't forget to add the Terraform state directory to the `.gitignore` file.
+
+## Talking Points
+
+* What is Infrastructure as Code (IaC)?
+* What is the evolution of IaC and where did it come from, what are the key technologies that created it (tip: virtualisation, cloud)?
+* What is the difference between some of the key IaC tools (Terraform, CloudFormation)?
+* What is the difference between IaC and Configuration Management (e.g. Ansible, Puppet)?
+* Can you use Terraform to build a multi-cloud environment?

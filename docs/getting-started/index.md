@@ -25,3 +25,12 @@ Best to create a new project for this work, you can do this in the GCP console.
 You will need a GitHub account and then create a repository for this work. Since we intend to use CI/CD and IaC, we will not be using the CLI or the GCP console to create resources, etc. We will only use if we really have to or explore.
 
 Create an empty repo and add what you want to a README.md, commit it and create you main branch etc.
+
+<!-- Abbr -->
+
+*[CI]: Continuous Integration
+*[CD]: Continuous Deployment
+*[GCP]: Google Compute Platform
+*[CLI]: Command Line Interface
+*[OS]: Operating System
+*[IDE]: Integrated Development Environment

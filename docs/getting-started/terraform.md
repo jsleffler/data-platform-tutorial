@@ -60,3 +60,12 @@ Great, will all this sorted, lets commit our code so far and get our repo into a
 * What is the difference between some of the key IaC tools (Terraform, CloudFormation)?
 * What is the difference between IaC and Configuration Management (e.g. Ansible, Puppet)?
 * Can you use Terraform to build a multi-cloud environment?
+
+<!-- Abbr -->
+
+*[GCP]: Google Compute Platform
+*[CLI]: Command Line Interface
+*[OS]: Operating System
+*[IaC]: Infrastructure as Code
+*[JSON]: JaveScript Object Notation
+*[GH]: GitHub
